@@ -51,7 +51,7 @@ namespace StudentsDiary
             tbForeignLang.Text = _student.ForeignLang;
             cbAdditionalLessons.Checked = _student.AdditionalLessons;
         }
-        private async void btnConfirm_Click(object sender, EventArgs e)
+        private void btnConfirm_Click(object sender, EventArgs e)
         {
             var students = _fileHelper.DeserializeFromFile();
 
@@ -64,19 +64,8 @@ namespace StudentsDiary
 
             _fileHelper.SerializeToFile(students);
 
-            await LongProcesAsync();
-
             Close();
         }
-        private async Task LongProcesAsync()
-        {
-           await Task.Run(() =>
-            {
-                Thread.Sleep(3000);
-            });
-            
-        }
-
         private void AddNewUserToList(List<Student> students)
         {
             var student = new Student
