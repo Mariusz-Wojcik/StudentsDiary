@@ -48,11 +48,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // tbId
             // 
-            this.tbId.Location = new System.Drawing.Point(86, 49);
+            this.tbId.Location = new System.Drawing.Point(121, 49);
             this.tbId.Name = "tbId";
             this.tbId.ReadOnly = true;
             this.tbId.Size = new System.Drawing.Size(202, 20);
@@ -78,7 +80,7 @@
             // 
             // tbFirstName
             // 
-            this.tbFirstName.Location = new System.Drawing.Point(86, 75);
+            this.tbFirstName.Location = new System.Drawing.Point(121, 75);
             this.tbFirstName.Name = "tbFirstName";
             this.tbFirstName.Size = new System.Drawing.Size(202, 20);
             this.tbFirstName.TabIndex = 2;
@@ -94,7 +96,7 @@
             // 
             // tbLastName
             // 
-            this.tbLastName.Location = new System.Drawing.Point(86, 101);
+            this.tbLastName.Location = new System.Drawing.Point(121, 101);
             this.tbLastName.Name = "tbLastName";
             this.tbLastName.Size = new System.Drawing.Size(202, 20);
             this.tbLastName.TabIndex = 4;
@@ -110,7 +112,7 @@
             // 
             // tbMath
             // 
-            this.tbMath.Location = new System.Drawing.Point(86, 127);
+            this.tbMath.Location = new System.Drawing.Point(121, 127);
             this.tbMath.Name = "tbMath";
             this.tbMath.Size = new System.Drawing.Size(202, 20);
             this.tbMath.TabIndex = 6;
@@ -126,7 +128,7 @@
             // 
             // tbTechnology
             // 
-            this.tbTechnology.Location = new System.Drawing.Point(86, 153);
+            this.tbTechnology.Location = new System.Drawing.Point(121, 153);
             this.tbTechnology.Name = "tbTechnology";
             this.tbTechnology.Size = new System.Drawing.Size(202, 20);
             this.tbTechnology.TabIndex = 8;
@@ -142,7 +144,7 @@
             // 
             // tbPhysics
             // 
-            this.tbPhysics.Location = new System.Drawing.Point(86, 179);
+            this.tbPhysics.Location = new System.Drawing.Point(121, 179);
             this.tbPhysics.Name = "tbPhysics";
             this.tbPhysics.Size = new System.Drawing.Size(202, 20);
             this.tbPhysics.TabIndex = 10;
@@ -158,7 +160,7 @@
             // 
             // tbPolishLang
             // 
-            this.tbPolishLang.Location = new System.Drawing.Point(85, 205);
+            this.tbPolishLang.Location = new System.Drawing.Point(120, 205);
             this.tbPolishLang.Name = "tbPolishLang";
             this.tbPolishLang.Size = new System.Drawing.Size(202, 20);
             this.tbPolishLang.TabIndex = 12;
@@ -174,14 +176,14 @@
             // 
             // tbForeignLang
             // 
-            this.tbForeignLang.Location = new System.Drawing.Point(85, 231);
+            this.tbForeignLang.Location = new System.Drawing.Point(120, 231);
             this.tbForeignLang.Name = "tbForeignLang";
             this.tbForeignLang.Size = new System.Drawing.Size(202, 20);
             this.tbForeignLang.TabIndex = 14;
             // 
             // rtbComments
             // 
-            this.rtbComments.Location = new System.Drawing.Point(85, 257);
+            this.rtbComments.Location = new System.Drawing.Point(120, 280);
             this.rtbComments.Name = "rtbComments";
             this.rtbComments.Size = new System.Drawing.Size(202, 96);
             this.rtbComments.TabIndex = 16;
@@ -190,7 +192,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 260);
+            this.label8.Location = new System.Drawing.Point(12, 283);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 13);
             this.label8.TabIndex = 17;
@@ -198,7 +200,7 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(212, 359);
+            this.btnConfirm.Location = new System.Drawing.Point(247, 389);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(75, 23);
             this.btnConfirm.TabIndex = 18;
@@ -208,7 +210,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(86, 359);
+            this.btnCancel.Location = new System.Drawing.Point(120, 389);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 19;
@@ -216,11 +218,31 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 260);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(101, 13);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Zajęcia dodatkowe:";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(215, 260);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 22;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // AddEdditStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 424);
+            this.ClientSize = new System.Drawing.Size(350, 424);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.label8);
@@ -241,8 +263,8 @@
             this.Controls.Add(this.tbFirstName);
             this.Controls.Add(this.lbId);
             this.Controls.Add(this.tbId);
-            this.MaximumSize = new System.Drawing.Size(326, 463);
-            this.MinimumSize = new System.Drawing.Size(326, 463);
+            this.MaximumSize = new System.Drawing.Size(366, 463);
+            this.MinimumSize = new System.Drawing.Size(366, 463);
             this.Name = "AddEdditStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodawanie ucznia";
@@ -273,5 +295,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
