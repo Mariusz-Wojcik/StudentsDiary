@@ -33,6 +33,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.dgvDiary = new System.Windows.Forms.DataGridView();
+            this.cbbGroupFilter = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiary)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +73,7 @@
             // btnRefresh
             // 
             this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnRefresh.Location = new System.Drawing.Point(255, 12);
+            this.btnRefresh.Location = new System.Drawing.Point(382, 14);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(75, 23);
             this.btnRefresh.TabIndex = 3;
@@ -95,12 +96,33 @@
             this.dgvDiary.Size = new System.Drawing.Size(1137, 486);
             this.dgvDiary.TabIndex = 4;
             // 
+            // cbbGroupFilter
+            // 
+            this.cbbGroupFilter.FormattingEnabled = true;
+            this.cbbGroupFilter.Items.AddRange(new object[] {
+            "Wszyscy",
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A",
+            "3B",
+            "4A",
+            "4B",
+            "5A",
+            "5B"});
+            this.cbbGroupFilter.Location = new System.Drawing.Point(255, 14);
+            this.cbbGroupFilter.Name = "cbbGroupFilter";
+            this.cbbGroupFilter.Size = new System.Drawing.Size(121, 21);
+            this.cbbGroupFilter.TabIndex = 5;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1161, 539);
+            this.Controls.Add(this.cbbGroupFilter);
             this.Controls.Add(this.dgvDiary);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnDelete);
@@ -121,6 +143,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.DataGridView dgvDiary;
+        private System.Windows.Forms.ComboBox cbbGroupFilter;
     }
 }
 
