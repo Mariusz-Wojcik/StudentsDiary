@@ -52,7 +52,13 @@ namespace StudentsDiary
         private void RefreshDiary()
         {
             var students = _fileHelper.DeserializeFromFile();
-            //MessageBox.Show($"{cbbGroupFilter.Text }");
+            var selectedGroup = Convert.ToInt32(cbbGroupFilter.SelectedValue);
+
+            if (selectedGroup > 0)
+            {
+                students = students.Where(x =>
+                    x.GroupId == cbbGroupFilter.Text.ToString()).ToList();
+            }
             dgvDiary.DataSource = students;
 
         }
