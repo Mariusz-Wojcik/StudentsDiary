@@ -50,6 +50,7 @@ namespace StudentsDiary
             tbPolishLang.Text = _student.PolishLang;
             tbForeignLang.Text = _student.ForeignLang;
             cbAdditionalLessons.Checked = _student.AdditionalLessons;
+            cbbGroupId.SelectedItem = _student.GroupId;
         }
         private void btnConfirm_Click(object sender, EventArgs e)
         {
@@ -79,7 +80,8 @@ namespace StudentsDiary
                 Physics = tbPhysics.Text,
                 PolishLang = tbPolishLang.Text,
                 ForeignLang = tbForeignLang.Text,
-                AdditionalLessons = cbAdditionalLessons.Checked
+                AdditionalLessons = cbAdditionalLessons.Checked,
+                GroupId = cbbGroupId.SelectedItem.ToString()
             };
 
             students.Add(student);
