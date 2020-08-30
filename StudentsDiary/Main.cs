@@ -1,6 +1,7 @@
 ﻿using StudentsDiary.Properties;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 
@@ -16,7 +17,7 @@ namespace StudentsDiary
             {
                 return Settings.Default.IsMaximize;
             }
-            set 
+            set
             {
                 Settings.Default.IsMaximize = value;
             }
@@ -27,14 +28,33 @@ namespace StudentsDiary
             InitializeComponent();
             RefreshDiary();
             SetColumnHeader();
+            InitComboboxGroups();
             if (IsMaximize)
                 WindowState = FormWindowState.Maximized;
+
+        }
+
+        private void InitComboboxGroups()
+        {
+            var _groups = new List<Group>
+            {
+            new Group { Id = 0, Name = "Wszystkie" },
+            new Group { Id = 1, Name = "1A" },
+            new Group { Id = 2, Name = "1B" },
+            new Group { Id = 3, Name = "2A" },
+            new Group { Id = 4, Name = "2B" }
+            };
+            cbbGroupFilter.DataSource = _groups;
+            cbbGroupFilter.DisplayMember = "Name";
+            cbbGroupFilter.ValueMember = "Id";
         }
 
         private void RefreshDiary()
         {
             var students = _fileHelper.DeserializeFromFile();
+            //MessageBox.Show($"{cbbGroupFilter.Text }");
             dgvDiary.DataSource = students;
+
         }
 
         private void SetColumnHeader()

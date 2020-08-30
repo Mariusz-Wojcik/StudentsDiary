@@ -250,17 +250,6 @@
             // cbbGroupId
             // 
             this.cbbGroupId.FormattingEnabled = true;
-            this.cbbGroupId.Items.AddRange(new object[] {
-            "1A",
-            "1B",
-            "2A",
-            "2B",
-            "3A",
-            "3B",
-            "4A",
-            "4B",
-            "5A",
-            "5B"});
             this.cbbGroupId.Location = new System.Drawing.Point(120, 379);
             this.cbbGroupId.Name = "cbbGroupId";
             this.cbbGroupId.Size = new System.Drawing.Size(202, 21);

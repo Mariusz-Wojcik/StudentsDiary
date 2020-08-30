@@ -99,18 +99,6 @@
             // cbbGroupFilter
             // 
             this.cbbGroupFilter.FormattingEnabled = true;
-            this.cbbGroupFilter.Items.AddRange(new object[] {
-            "Wszyscy",
-            "1A",
-            "1B",
-            "2A",
-            "2B",
-            "3A",
-            "3B",
-            "4A",
-            "4B",
-            "5A",
-            "5B"});
             this.cbbGroupFilter.Location = new System.Drawing.Point(255, 14);
             this.cbbGroupFilter.Name = "cbbGroupFilter";
             this.cbbGroupFilter.Size = new System.Drawing.Size(121, 21);

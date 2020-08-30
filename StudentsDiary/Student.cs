@@ -14,4 +14,10 @@
         public bool AdditionalLessons { get; set; }
         public string GroupId { get; set; }
     }
+
+    public class Group
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
 }

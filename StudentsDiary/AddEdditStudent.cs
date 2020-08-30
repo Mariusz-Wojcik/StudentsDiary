@@ -22,6 +22,20 @@ namespace StudentsDiary
             _studentId = id;
             GetStudentData();
             tbFirstName.Select();
+            InitComboboxGroups();
+        }
+        private void InitComboboxGroups()
+        {
+            var _groups = new List<Group>
+            {
+            new Group { Id = 1, Name = "1A" },
+            new Group { Id = 2, Name = "1B" },
+            new Group { Id = 3, Name = "2A" },
+            new Group { Id = 4, Name = "2B" }
+            };
+            cbbGroupId.DataSource = _groups;
+            cbbGroupId.DisplayMember = "Name";
+            cbbGroupId.ValueMember = "Id";
         }
         private void GetStudentData()
         {
@@ -81,7 +95,7 @@ namespace StudentsDiary
                 PolishLang = tbPolishLang.Text,
                 ForeignLang = tbForeignLang.Text,
                 AdditionalLessons = cbAdditionalLessons.Checked,
-                GroupId = cbbGroupId.SelectedItem.ToString()
+                GroupId = cbbGroupId.Text.ToString()
             };
 
             students.Add(student);
