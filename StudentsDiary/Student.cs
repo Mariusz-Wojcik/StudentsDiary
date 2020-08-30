@@ -12,5 +12,6 @@
         public string PolishLang { get; set; }
         public string ForeignLang { get; set; }
         public bool AdditionalLessons { get; set; }
+        public string GroupId { get; set; }
     }
 }
