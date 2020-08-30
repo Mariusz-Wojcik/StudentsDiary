@@ -49,6 +49,7 @@ namespace StudentsDiary
             tbPhysics.Text = _student.Physics;
             tbPolishLang.Text = _student.PolishLang;
             tbForeignLang.Text = _student.ForeignLang;
+            cbAdditionalLessons.Checked = _student.AdditionalLessons;
         }
         private async void btnConfirm_Click(object sender, EventArgs e)
         {
@@ -88,7 +89,8 @@ namespace StudentsDiary
                 Technology = tbTechnology.Text,
                 Physics = tbPhysics.Text,
                 PolishLang = tbPolishLang.Text,
-                ForeignLang = tbForeignLang.Text
+                ForeignLang = tbForeignLang.Text,
+                AdditionalLessons = cbAdditionalLessons.Checked
             };
 
             students.Add(student);

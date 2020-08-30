@@ -49,7 +49,7 @@
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbAdditionalLessons = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // tbId
@@ -227,21 +227,21 @@
             this.label9.TabIndex = 21;
             this.label9.Text = "Zajęcia dodatkowe:";
             // 
-            // checkBox1
+            // cbAdditionalLessons
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(215, 260);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 22;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbAdditionalLessons.AutoSize = true;
+            this.cbAdditionalLessons.Location = new System.Drawing.Point(215, 260);
+            this.cbAdditionalLessons.Name = "cbAdditionalLessons";
+            this.cbAdditionalLessons.Size = new System.Drawing.Size(15, 14);
+            this.cbAdditionalLessons.TabIndex = 22;
+            this.cbAdditionalLessons.UseVisualStyleBackColor = true;
             // 
             // AddEdditStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 424);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.cbAdditionalLessons);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
@@ -296,6 +296,6 @@
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbAdditionalLessons;
     }
 }
